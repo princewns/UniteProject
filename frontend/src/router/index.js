@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import MemoList from '../views/MemoList.vue'
 import Write from '../views/WriteForm.vue'
 import listPage from '../views/PageView.vue'
+import UpdateForm from '../views/UpdateForm.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path : "/list/:id",
     name : "listPage",
     component : listPage
+  },
+  {
+    path : "/updateform/:id",
+    name : "updateform",
+    component : UpdateForm
   }
 ]
 
